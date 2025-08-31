@@ -1,0 +1,56 @@
+# Configuração do GitHub Pages para o Projeto Economia Sustentável
+
+# Site settings
+title: "Projeto Economia Sustentável"
+description: "Conscientizando e fortalecendo a economia local através de práticas sustentáveis e consumo responsável"
+url: "https://[SEU-USUARIO].github.io"
+baseurl: "/[NOME-DO-REPOSITORIO]"
+
+# GitHub Pages settings
+plugins:
+    - jekyll-sitemap
+    - jekyll-feed
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files from processing
+exclude:
+    - README.md
+    - Gemfile
+    - Gemfile.lock
+    - node_modules
+    - vendor
+    - .sass-cache
+    - .jekyll-cache
+    - .DS_Store
+
+# Include files
+include:
+    - _pages
+
+# Collections
+collections:
+    pages:
+        output: true
+        permalink: /:name/
+
+# Defaults
+defaults:
+    - scope:
+          path: ""
+          type: "pages"
+      values:
+          layout: "default"
+
+# SEO
+author: "Projeto Economia Sustentável"
+twitter:
+    username: economiasustentavel
+social:
+    name: Projeto Economia Sustentável
+    links:
+        - https://github.com/[SEU-USUARIO]/[NOME-DO-REPOSITORIO]
+# Analytics (opcional)
+# google_analytics: "UA-XXXXXXXX-X"
