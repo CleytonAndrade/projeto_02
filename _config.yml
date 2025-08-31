@@ -3,8 +3,8 @@
 # Site settings
 title: "Projeto Economia Sustentável"
 description: "Conscientizando e fortalecendo a economia local através de práticas sustentáveis e consumo responsável"
-url: "https://[SEU-USUARIO].github.io"
-baseurl: "/[NOME-DO-REPOSITORIO]"
+url: "https://cleytonandrade.github.io"
+baseurl: "/projeto_02"
 
 # GitHub Pages settings
 plugins:
@@ -51,6 +51,6 @@ twitter:
 social:
     name: Projeto Economia Sustentável
     links:
-        - https://github.com/[SEU-USUARIO]/[NOME-DO-REPOSITORIO]
+        - https://github.com/CleytonAndrade/projeto_02
 # Analytics (opcional)
 # google_analytics: "UA-XXXXXXXX-X"

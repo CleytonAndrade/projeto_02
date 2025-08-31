@@ -4,6 +4,16 @@ Um projeto de extensão universitária focado em conscientização e fortalecime
 
 ## 🚀 Como Executar
 
+### 🌐 **Acesso Online (GitHub Pages)**
+
+O projeto está configurado para o repositório CleytonAndrade/projeto_02:
+
+**🔗 URL do Site:** https://cleytonandrade.github.io/projeto_02
+
+### 💻 **Desenvolvimento Local**
+
+Para testar localmente:
+
 1. **Servidor Local (Recomendado)**:
 
     ```bash
@@ -26,7 +36,12 @@ extencao/
 ├── projeto-de-extencao/
 │   └── Projeto-de-extencao/
 │       └── fotos/         # Galeria de imagens
-└── docs/                  # Documentação adicional
+├── _config.yml            # Configuração GitHub Pages
+├── .nojekyll              # Evita processamento Jekyll
+├── .gitignore             # Arquivos ignorados pelo Git
+├── DEPLOY.md              # Instruções específicas de deploy
+├── configure-github-pages.py  # Script de configuração automática
+└── README.md              # Documentação principal
 ```
 
 ## ✨ Melhorias Implementadas
@@ -90,6 +105,33 @@ O site foi otimizado para funcionar perfeitamente em:
 -   ✅ **Fast Loading**: Recursos otimizados e lazy loading
 -   ✅ **Accessibility**: Compatível com leitores de tela
 -   ✅ **Mobile First**: Design responsivo prioritário
+
+## 🌐 GitHub Pages - Configuração Específica
+
+### 📋 **Informações do Repositório**
+
+-   **GitHub**: https://github.com/CleytonAndrade/projeto_02
+-   **Site**: https://cleytonandrade.github.io/projeto_02
+-   **Status**: ✅ URLs já configuradas automaticamente
+
+### 🚀 **Deploy Rápido**
+
+```bash
+# Fazer commit das alterações
+git add .
+git commit -m "Deploy do projeto reorganizado com design moderno"
+git push origin main
+
+# Ativar GitHub Pages se ainda não estiver ativo:
+# 1. Ir em Settings > Pages
+# 2. Source: Deploy from branch
+# 3. Branch: main / (root)
+```
+
+### 📖 **Documentação Completa**
+
+-   **Instruções detalhadas**: [`DEPLOY.md`](DEPLOY.md)
+-   **Script de configuração**: `configure-github-pages.py` (já não é mais necessário)
 
 ---
 
