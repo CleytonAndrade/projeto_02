@@ -10,31 +10,6 @@ O projeto está configurado para o repositório CleytonAndrade/projeto_02:
 
 **🔗 URL do Site:** <https://cleytonandrade.github.io/projeto_02>
 
-## 📁 Estrutura do Projeto
-
-extencao/
-├── index.html              # Página principal
-├── css/
-│   └── style.css          # Estilos organizados e modernos
-├── js/
-│   └── script.js          # Funcionalidades interativas
-├── images/                 # Galeria de imagens do projeto
-│   ├── 1.jpg              # Fotos das atividades
-│   ├── 2.jpg              # e intervenções
-│   └── ...                # (total: 10 imagens)
-├── assets/                # Recursos do site
-│   └── favicon.svg        # Ícone SVG responsivo
-├── _config.yml            # Configuração GitHub Pages
-├── .nojekyll              # Evita processamento Jekyll
-├── .gitignore             # Arquivos ignorados pelo Git
-├── manifest.json          # Configuração PWA
-├── sw.js                  # Service Worker
-├── robots.txt             # SEO e indexação
-├── sitemap.xml            # Mapa do site
-├── DEPLOY.md              # Instruções específicas de deploy
-├── configure-github-pages.py  # Script de configuração automática
-└── README.md              # Documentação principal
-
 ## ✨ Melhorias Implementadas
 
 ### 🎨 Design e UX
