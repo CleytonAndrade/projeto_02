@@ -8,7 +8,7 @@ Um projeto de extensão universitária focado em conscientização e fortalecime
 
 O projeto está configurado para o repositório CleytonAndrade/projeto_02:
 
-**🔗 URL do Site:** https://cleytonandrade.github.io/projeto_02
+**🔗 URL do Site:** <https://cleytonandrade.github.io/projeto_02>
 
 ### 💻 **Desenvolvimento Local**
 
@@ -26,7 +26,6 @@ Para testar localmente:
 
 ## 📁 Estrutura do Projeto
 
-```
 extencao/
 ├── index.html              # Página principal
 ├── css/
@@ -49,7 +48,6 @@ extencao/
 ├── DEPLOY.md              # Instruções específicas de deploy
 ├── configure-github-pages.py  # Script de configuração automática
 └── README.md              # Documentação principal
-```
 
 ## ✨ Melhorias Implementadas
 
@@ -152,8 +150,8 @@ O site foi otimizado para funcionar perfeitamente em:
 
 ### 📋 **Informações do Repositório**
 
-- **GitHub**: https://github.com/CleytonAndrade/projeto_02
-- **Site**: https://cleytonandrade.github.io/projeto_02
+- **GitHub**: <https://github.com/CleytonAndrade/projeto_02>
+- **Site**: <https://cleytonandrade.github.io/projeto_02>
 - **Status**: ✅ URLs já configuradas automaticamente
 
 ### 🚀 **Deploy Rápido**
