@@ -33,9 +33,10 @@ extencao/
 │   └── style.css          # Estilos organizados e modernos
 ├── js/
 │   └── script.js          # Funcionalidades interativas
-├── projeto-de-extencao/
-│   └── Projeto-de-extencao/
-│       └── fotos/         # Galeria de imagens
+├── images/                 # Galeria de imagens do projeto
+│   ├── 1.jpg              # Fotos das atividades
+│   ├── 2.jpg              # e intervenções
+│   └── ...                # (total: 10 imagens)
 ├── _config.yml            # Configuração GitHub Pages
 ├── .nojekyll              # Evita processamento Jekyll
 ├── .gitignore             # Arquivos ignorados pelo Git
