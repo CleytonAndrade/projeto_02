@@ -1,0 +1,83 @@
+{
+    "name": "Projeto Economia Sustentável",
+    "short_name": "EcoSustentável",
+    "description": "Projeto de extensão universitária focado em conscientização e fortalecimento da economia local através de práticas sustentáveis",
+    "start_url": "/projeto_02/",
+    "scope": "/projeto_02/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "theme_color": "#2e7d32",
+    "background_color": "#e8f5e9",
+    "lang": "pt-BR",
+    "dir": "ltr",
+    "categories": ["education", "lifestyle", "social"],
+    "keywords": [
+        "economia sustentável",
+        "sustentabilidade",
+        "consumo consciente",
+        "meio ambiente",
+        "extensão universitária"
+    ],
+    "icons": [
+        {
+            "src": "assets/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "images/1.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "images/1.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpeg",
+            "platform": "wide",
+            "label": "Atividades do projeto de economia sustentável"
+        },
+        {
+            "src": "images/2.jpg",
+            "sizes": "750x1334",
+            "type": "image/jpeg",
+            "platform": "narrow",
+            "label": "Feira de produtos locais"
+        }
+    ],
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "iarc_rating_id": "",
+    "edge_side_panel": {
+        "preferred_width": 480
+    },
+    "shortcuts": [
+        {
+            "name": "Ver Galeria",
+            "short_name": "Galeria",
+            "description": "Visualizar galeria de fotos do projeto",
+            "url": "/projeto_02/#galeria",
+            "icons": [
+                {
+                    "src": "assets/favicon.svg",
+                    "sizes": "96x96"
+                }
+            ]
+        },
+        {
+            "name": "Contato",
+            "short_name": "Contato",
+            "description": "Entrar em contato com o projeto",
+            "url": "/projeto_02/#contato",
+            "icons": [
+                {
+                    "src": "assets/favicon.svg",
+                    "sizes": "96x96"
+                }
+            ]
+        }
+    ]
+}

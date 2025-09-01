@@ -45,9 +45,15 @@
             Projeto Economia Sustentável | Conscientização e Economia Local
         </title>
 
-        <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+        <!-- Favicon e PWA -->
+        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
+        <link rel="apple-touch-icon" href="assets/favicon.svg" />
+        <link rel="manifest" href="manifest.json" />
+        <meta name="theme-color" content="#2e7d32" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="EcoSustentável" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -89,6 +95,9 @@
             >
             <a href="#galeria" aria-label="Ir para seção Galeria">Galeria</a>
             <a href="#contato" aria-label="Ir para seção Contato">Contato</a>
+            <a href="#compartilhar" aria-label="Ir para seção Compartilhar"
+                >Compartilhar</a
+            >
         </nav>
 
         <!-- Main Content -->
@@ -423,6 +432,90 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Compartilhar Section -->
+            <section id="compartilhar" aria-labelledby="compartilhar-heading">
+                <h2 id="compartilhar-heading">Compartilhe o Projeto</h2>
+                <p>
+                    Ajude a espalhar a consciência sobre economia sustentável
+                    compartilhando nosso projeto!
+                </p>
+
+                <div class="share-buttons">
+                    <button
+                        class="share-btn whatsapp"
+                        onclick="shareOn('whatsapp')"
+                        aria-label="Compartilhar no WhatsApp"
+                    >
+                        <span class="share-icon">📱</span>
+                        <span>WhatsApp</span>
+                    </button>
+
+                    <button
+                        class="share-btn facebook"
+                        onclick="shareOn('facebook')"
+                        aria-label="Compartilhar no Facebook"
+                    >
+                        <span class="share-icon">📘</span>
+                        <span>Facebook</span>
+                    </button>
+
+                    <button
+                        class="share-btn twitter"
+                        onclick="shareOn('twitter')"
+                        aria-label="Compartilhar no Twitter"
+                    >
+                        <span class="share-icon">🐦</span>
+                        <span>Twitter</span>
+                    </button>
+
+                    <button
+                        class="share-btn linkedin"
+                        onclick="shareOn('linkedin')"
+                        aria-label="Compartilhar no LinkedIn"
+                    >
+                        <span class="share-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </button>
+
+                    <button
+                        class="share-btn email"
+                        onclick="shareOn('email')"
+                        aria-label="Compartilhar por Email"
+                    >
+                        <span class="share-icon">📧</span>
+                        <span>Email</span>
+                    </button>
+
+                    <button
+                        class="share-btn copy"
+                        onclick="copyLink()"
+                        aria-label="Copiar Link"
+                    >
+                        <span class="share-icon">🔗</span>
+                        <span id="copy-text">Copiar Link</span>
+                    </button>
+                </div>
+
+                <div class="project-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="85">0</span>
+                        <span class="stat-label">% Engajamento</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="40">0</span>
+                        <span class="stat-label">% Maior Consciência</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="25">0</span>
+                        <span class="stat-label">% Crescimento Vendas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="30">0</span>
+                        <span class="stat-label">% Redução Desperdício</span>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Modal de Imagem -->
@@ -447,6 +540,16 @@
             </div>
         </div>
 
+        <!-- Back to Top Button -->
+        <button
+            id="backToTop"
+            class="back-to-top"
+            aria-label="Voltar ao topo"
+            title="Voltar ao topo"
+        >
+            <span class="back-to-top-icon">⬆️</span>
+        </button>
+
         <!-- Footer -->
         <footer role="contentinfo">
             <p>
@@ -457,5 +560,24 @@
 
         <!-- JavaScript -->
         <script src="js/script.js"></script>
+
+        <!-- Service Worker Registration -->
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", function () {
+                    navigator.serviceWorker.register("/projeto_02/sw.js").then(
+                        function (registration) {
+                            console.log(
+                                "🌱 SW registrado com sucesso:",
+                                registration.scope
+                            );
+                        },
+                        function (err) {
+                            console.log("🌱 SW falhou:", err);
+                        }
+                    );
+                });
+            }
+        </script>
     </body>
 </html>

@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cleytonandrade.github.io/projeto_02/sitemap.xml
+
+# Principais páginas
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Não indexar arquivos de configuração
+Disallow: /_config.yml
+Disallow: /.nojekyll
+Disallow: /.gitignore
+Disallow: /configure-github-pages.py
+Disallow: /DEPLOY.md
+
+# Informações do projeto
+# Projeto Economia Sustentável
+# Foco: Conscientização e fortalecimento da economia local
+# Universidade: Projeto de extensão universitária
